@@ -23,7 +23,7 @@ To run this project, ensure that you have Python installed along with the requir
 pip install -r requirements.txt
 You also need API keys for Groq and Nomic. Set them in your environment:
 
-bash
+'''bash
 Copy
 Edit
 export GROQ_API_KEY="your_groq_api_key"
