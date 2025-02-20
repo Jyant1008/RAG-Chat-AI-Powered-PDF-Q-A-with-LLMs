@@ -25,10 +25,10 @@ pip install -r requirements.txt
 ## You also need API keys for Groq and Nomic. Set them in your environment:
 
 
-Copy
-Edit
-export GROQ_API_KEY="your_groq_api_key"
-export NOMIC_API_KEY="your_nomic_api_key"
+
+
+* export GROQ_API_KEY="your_groq_api_key"
+* export NOMIC_API_KEY="your_nomic_api_key"
 Alternatively, you can enter them manually when running the application.
 
 ## Dataset Processing
