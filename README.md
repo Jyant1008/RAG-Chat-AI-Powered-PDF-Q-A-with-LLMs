@@ -12,11 +12,11 @@
 
 ## Installation  
 
-### 1️⃣ Clone the Repository  
+### Clone the Repository  
 ```bash
 git clone https://github.com/yourusername/rag-chat.git
 cd rag-chat
-2️⃣ Create a Virtual Environment
+### Create a Virtual Environment
 bash
 Copy
 Edit
