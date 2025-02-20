@@ -21,7 +21,7 @@ To run this project, ensure that you have Python installed along with the requir
 
 ```bash
 pip install -r requirements.txt
-You also need API keys for Groq and Nomic. Set them in your environment:
+## You also need API keys for Groq and Nomic. Set them in your environment:
 
 '''bash
 Copy
@@ -30,13 +30,13 @@ export GROQ_API_KEY="your_groq_api_key"
 export NOMIC_API_KEY="your_nomic_api_key"
 Alternatively, you can enter them manually when running the application.
 
-Dataset Processing
+## Dataset Processing
 This project supports PDF documents. Once a PDF is uploaded:
 
 The document is split into chunks for efficient retrieval.
 Nomic embeddings are generated to convert text into vectors.
 A FAISS vector database stores the processed text for similarity searches.
-Usage
+## Usage
 Clone the Repository
 
 bash
@@ -60,31 +60,31 @@ Edit
 streamlit run app.py
 Upload a PDF and start interacting with the chatbot!
 
-Models Used
+## Models Used
 Gemma2-9B-IT
 LLaMA 3.1 8B Instant
 Mixtral-8x7B-32768
 LLaMA3-8B-8192
 Each model provides a different balance of performance and efficiency.
 
-Embedding and Vector Search
+## Embedding and Vector Search
 Text Embeddings: Nomic-Embed-Text-v1.5
 Vector Database: FAISS
 Text Splitting: RecursiveCharacterTextSplitter
 This setup ensures efficient document retrieval and fast query responses.
 
-Chatbot Functionality
+## Chatbot Functionality
 Stores conversation history and retrieves relevant context.
 Retrieves document chunks for accurate answers.
 Provides step-by-step responses to user queries.
 Supports clearing and restoring chat history.
-Evaluation
+## Evaluation
 The chatbot is evaluated based on:
 
 Response Relevance: Answers are compared against human-validated responses.
 Retrieval Accuracy: The vector search is tested against known queries.
 Performance Metrics: Latency and response times are analyzed.
-Contributing
+## Contributing
 Contributions are welcome! If you have suggestions or improvements:
 
 Fork the repository
