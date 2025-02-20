@@ -19,9 +19,9 @@ This project implements a **Retrieval-Augmented Generation (RAG)** chatbot using
 
 To run this project, ensure that you have Python installed along with the required dependencies. Install them using the following command:  
 
-```bash
+
 pip install -r requirements.txt
-```bash
+
 ## You also need API keys for Groq and Nomic. Set them in your environment:
 
 
