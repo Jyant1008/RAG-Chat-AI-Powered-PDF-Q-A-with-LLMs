@@ -27,18 +27,18 @@ pip install -r requirements.txt
 
 
 
-* export GROQ_API_KEY="your_groq_api_key"
-* export NOMIC_API_KEY="your_nomic_api_key"
-Alternatively, you can enter them manually when running the application.
+* GROQ_API_KEY="your_groq_api_key"
+* NOMIC_API_KEY="your_nomic_api_key"
+* Alternatively, you can enter them manually when running the application.
 
 ## Dataset Processing
-This project supports PDF documents. Once a PDF is uploaded:
+* This project supports PDF documents. Once a PDF is uploaded:
 
-The document is split into chunks for efficient retrieval.
-Nomic embeddings are generated to convert text into vectors.
-A FAISS vector database stores the processed text for similarity searches.
+* The document is split into chunks for efficient retrieval.
+* Nomic embeddings are generated to convert text into vectors.
+* A FAISS vector database stores the processed text for similarity searches.
 ## Usage
-Clone the Repository
+* Clone the Repository
 
 bash
 Copy
