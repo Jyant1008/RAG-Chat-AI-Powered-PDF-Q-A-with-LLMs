@@ -58,36 +58,36 @@ Run the Application
 bash
 Copy
 Edit
-streamlit run app.py
-Upload a PDF and start interacting with the chatbot!
+* streamlit run app.py
+* Upload a PDF and start interacting with the chatbot!
 
 ## Models Used
-Gemma2-9B-IT
-LLaMA 3.1 8B Instant
-Mixtral-8x7B-32768
-LLaMA3-8B-8192
-Each model provides a different balance of performance and efficiency.
+* Gemma2-9B-IT
+* LLaMA 3.1 8B Instant
+* Mixtral-8x7B-32768
+* LLaMA3-8B-8192
+* Each model provides a different balance of performance and efficiency.
 
 ## Embedding and Vector Search
-Text Embeddings: Nomic-Embed-Text-v1.5
-Vector Database: FAISS
-Text Splitting: RecursiveCharacterTextSplitter
-This setup ensures efficient document retrieval and fast query responses.
+* Text Embeddings: Nomic-Embed-Text-v1.5
+* Vector Database: FAISS
+* Text Splitting: RecursiveCharacterTextSplitter
+* This setup ensures efficient document retrieval and fast query responses.
 
 ## Chatbot Functionality
-Stores conversation history and retrieves relevant context.
-Retrieves document chunks for accurate answers.
-Provides step-by-step responses to user queries.
-Supports clearing and restoring chat history.
+* Stores conversation history and retrieves relevant context.
+* Retrieves document chunks for accurate answers.
+* Provides step-by-step responses to user queries.
+* Supports clearing and restoring chat history.
 ## Evaluation
-The chatbot is evaluated based on:
+* The chatbot is evaluated based on:
 
-Response Relevance: Answers are compared against human-validated responses.
-Retrieval Accuracy: The vector search is tested against known queries.
-Performance Metrics: Latency and response times are analyzed.
+* Response Relevance: Answers are compared against human-validated responses.
+* Retrieval Accuracy: The vector search is tested against known queries.
+* Performance Metrics: Latency and response times are analyzed.
 ## Contributing
-Contributions are welcome! If you have suggestions or improvements:
+* Contributions are welcome! If you have suggestions or improvements:
 
-Fork the repository
-Create a new branch
-Submit a pull request
+* Fork the repository
+* Create a new branch
+* Submit a pull request
