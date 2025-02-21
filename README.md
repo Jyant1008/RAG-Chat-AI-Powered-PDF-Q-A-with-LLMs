@@ -40,24 +40,16 @@ pip install -r requirements.txt
 ## Usage
 * Clone the Repository
 
-bash
-Copy
-Edit
 git clone https://github.com/Jyant1008/rag-chat.git
 cd rag-chat
-Create a Virtual Environment
+* Create a Virtual Environment
 
-bash
-Copy
-Edit
-python -m venv venv
-source venv/bin/activate  # Mac/Linux
-venv\Scripts\activate  # Windows
-Run the Application
 
-bash
-Copy
-Edit
+* python -m venv venv
+* source venv/bin/activate  # Mac/Linux
+* venv\Scripts\activate  # Windows
+* Run the Application
+
 * streamlit run app.py
 * Upload a PDF and start interacting with the chatbot!
 
