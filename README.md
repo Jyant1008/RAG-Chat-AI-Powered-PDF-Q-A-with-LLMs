@@ -40,8 +40,8 @@ pip install -r requirements.txt
 ## Usage
 * Clone the Repository
 
-git clone https://github.com/Jyant1008/rag-chat.git
-cd rag-chat
+* git clone https://github.com/Jyant1008/rag-chat.git
+* cd rag-chat
 * Create a Virtual Environment
 
 
