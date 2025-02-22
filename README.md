@@ -50,8 +50,14 @@ pip install -r requirements.txt
 * venv\Scripts\activate  # Windows
 * Run the Application
 
-* streamlit run app.py
+* streamlit run jyant.py
 * Upload a PDF and start interacting with the chatbot!
+## Anothe method to use
+* Download jyant.py
+* Create and activate the environment
+* Install all the dependencies
+* Make a  file with the extension .env and put the groq api key and nomic api key here in the format  as described above
+* Run the python file from terminal by using **streamlit run jyant.py(or name of your python file)**
 
 ## Models Used
 * Gemma2-9B-IT
