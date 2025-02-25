@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain-core
+langchain-community
+langchain-nomic
+pypdf
+faiss-cpu
+groq
+nomic
