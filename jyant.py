@@ -5,8 +5,11 @@ from langchain_core.messages import HumanMessage,AIMessage
 import streamlit as st
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-
+from langchain.chat_models import init_chat_model
 from langchain_community.vectorstores import FAISS
+from langchain_nomic import NomicEmbeddings
+import getpass
+import os
 
 # Some inilializations 
 docs = None
@@ -33,13 +36,12 @@ model = st.sidebar.selectbox(
     ("gemma2-9b-it","llama-3.1-8b-instant", "mixtral-8x7b-32768","llama3-8b-8192"),
 )
 # API keys to access the model from GROQ
-import getpass
-import os
+
 
 if not os.environ.get("GROQ_API_KEY"):
   os.environ["GROQ_API_KEY"] = getpass.getpass("Enter API key for Groq: ")
 
-from langchain.chat_models import init_chat_model
+
 
 LLM_model = init_chat_model(model, model_provider="groq")
 
@@ -74,13 +76,12 @@ chunkoverlap = st.sidebar.slider("A value between 0 and 200",value=50,min_value=
 
 # Creating embedding database from the chucks and API calling of nomic embding tyext model
 st.sidebar.subheader('Create embedded database from the pdf')
-import getpass
-import os
+
 
 if not os.environ.get("NOMIC_API_KEY"):
   os.environ["NOMIC_API_KEY"] = getpass.getpass("Enter API key for Nomic: ")
 
-from langchain_nomic import NomicEmbeddings
+
 
 embeddings = NomicEmbeddings(model="nomic-embed-text-v1.5")
 if st.sidebar.button('Create database'):
